@@ -1,0 +1,19 @@
+@model Presentation.WebApp.Models.Venta
+
+<h2>Editar Venta</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <label>Cliente:</label>
+    <input asp-for="ClienteNombre" /><br />
+
+    <label>Producto:</label>
+    <input asp-for="Producto" /><br />
+
+    <label>Precio:</label>
+    <input asp-for="Precio" type="number" /><br />
+
+    <button type="submit">Guardar Cambios</button>
+    <a asp-action="Index">Cancelar</a>
+</form>

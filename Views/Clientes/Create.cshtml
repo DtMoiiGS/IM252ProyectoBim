@@ -1,0 +1,22 @@
+@model Presentation.WebApp.Models.Cliente
+
+<h2>Crear Nuevo Cliente</h2>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label for="Nombre">Nombre</label>
+        <input type="text" id="Nombre" name="Nombre" required />
+    </div>
+    <div>
+        <label for="Direccion">Dirección</label>
+        <input type="text" id="Direccion" name="Direccion" required />
+    </div>
+    <div>
+        <label for="Telefono">Teléfono</label>
+        <input type="text" id="Telefono" name="Telefono" required />
+    </div>
+    <div>
+        <button type="submit">Guardar</button>
+        <a asp-action="Index">Cancelar</a>
+    </div>
+</form>
